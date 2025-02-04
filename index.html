@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <a href="https://open.spotify.com">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z"/></svg>
+                </i>
+            </a>
+        </div>
+
+        <div class="search">
+
+            <div class="home">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
+                </i>
+            </div>
+
+            <div class="searchbar">
+
+                <div id="searchtext">
+                    <label for="search">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                        </i>
+                    </label>
+                    <input type="text" placeholder="O que você quer ouvir?" name="search">
+                </div>
+
+                <i class="shopping">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M253.3 35.1c6.1-11.8 1.5-26.3-10.2-32.4s-26.3-1.5-32.4 10.2L117.6 192 32 192c-17.7 0-32 14.3-32 32s14.3 32 32 32L83.9 463.5C91 492 116.6 512 146 512L430 512c29.4 0 55-20 62.1-48.5L544 256c17.7 0 32-14.3 32-32s-14.3-32-32-32l-85.6 0L365.3 12.9C359.2 1.2 344.7-3.4 332.9 2.7s-16.3 20.6-10.2 32.4L404.3 192l-232.6 0L253.3 35.1zM192 304l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16zm96-16c8.8 0 16 7.2 16 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16zm128 16l0 96c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-96c0-8.8 7.2-16 16-16s16 7.2 16 16z"/></svg>
+                </i>
+            </div>
+
+        </div>
+
+        <div class="profile">
+            <div class="download">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 242.7-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7 288 32zM64 352c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-101.5 0-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352 64 352zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg>
+                </i>
+                <span>Instalar aplicativo</span>
+            </div>
+
+            <i class="bell">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416l400 0c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4l0-25.4c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112l0 25.4c0 47.9 13.9 94.6 39.7 134.6L72.3 368C98.1 328 112 281.3 112 233.4l0-25.4c0-61.9 50.1-112 112-112zm64 352l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/></svg>
+            </i>
+            <img src="https://i.scdn.co/image/ab67757000003b82aa45f24fc992a618f0d5f45d" alt="Foto de perfil">
+
+        </div>
+    </header>
+
+
+
+    
+    <div class="dflex">
+        <aside>
+            <div class="title">
+                <div class="maintitle">
+                    <i>
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE e-9541-icon" viewBox="0 0 24 24"><path d="M14.5 2.134a1 1 0 0 1 1 0l6 3.464a1 1 0 0 1 .5.866V21a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 .5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zm6 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1z"></path></svg>
+                    </i>
+                    <span>Sua Biblioteca</span>
+                </div>
+                <div class="icons">
+                    <button>
+                        <i>
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 dYnaPI e-9541-icon" viewBox="0 0 16 16"><path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"></path></svg>
+                        </i>
+                    </button>
+                    <button>
+                        <i>
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk e-9541-icon" viewBox="0 0 16 16"><path d="M7.19 1A.749.749 0 0 1 8.47.47L16 7.99l-7.53 7.521a.75.75 0 0 1-1.234-.815.75.75 0 0 1 .174-.243l5.72-5.714H.75a.75.75 0 1 1 0-1.498h12.38L7.41 1.529a.749.749 0 0 1-.22-.53z"></path></svg>
+                        </i>
+                    </button>
+                </div>
+            </div>
+            <div class="categories">
+                <button>
+                    <span>Playlists</span>
+                </button>
+                <button>
+                    <span>
+                        Artistas
+                    </span>
+                </button>
+                <button>
+                    <span>
+                        Álbuns
+                    </span>
+                </button>
+            </div>
+            <div class="subcategories">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </i>
+                <div class="recent">
+                    <span>Recentes</span>
+                    <i>
+                        <svg data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk e-9541-icon" viewBox="0 0 16 16"><path d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z"></path></svg>
+                    </i>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <button>
+                        <img src="https://i.scdn.co/image/ab67616d000011ebe4bf0d3d9e0224a30ca5f665" alt="Cherry Bomb">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album" id="playing">Cherry Bomb</p>
+                            <p class="artist">Álbum  •  Tyler, the Creator</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <button>
+                        <img src="https://cdn-images.dzcdn.net/images/cover/7ce6b8452fae425557067db6e6a1cad5/0x1900-000000-80-0-0.jpg" alt="DAMN.">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album">DAMN.</p>
+                            <p class="artist">Álbum  •  Kendrick Lamar</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <button>
+                        <img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/3/11/1426099817173/f1efb3f4-9a6d-4f78-8ca8-594ab646d198-bestSizeAvailable.jpeg?width=465&dpr=1&s=none&crop=none" alt="To pimp a butterfly">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album">To Pimp A Butterfly</p>
+                            <p class="artist">Álbum  •  Tyler, the Creator</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <button>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/5b/Chromakopia_CD_cover.jpg" alt="CHROMAKOPIA">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album">CHROMAKOPIA</p>
+                            <p class="artist">Álbum  •  Tyler, the Creator</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <button>
+                        <img src="https://cdn-images.dzcdn.net/images/cover/a7a16b8f63b1ec0e9fbd327619966737/0x1900-000000-80-0-0.jpg" alt="Flower Boy">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album">Flower Boy</p>
+                            <p class="artist">Álbum  •  Tyler, the Creator</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <button>
+                        <img src="https://cdn-images.dzcdn.net/images/cover/412361ce41f0bd2595978dbf0e035ad3/0x1900-000000-80-0-0.jpg" alt="Mr. Morale & The Big Steppers">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album">Mr. Morale & The Big Steppers</p>
+                            <p class="artist">Álbum  •  Kendrick Lamar</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <button>
+                        <img src="https://i.scdn.co/image/ab67616d000011ebe4bf0d3d9e0224a30ca5f665" alt="Cherry Bomb">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album">Cherry Bomb</p>
+                            <p class="artist">Álbum  •  Tyler, the Creator</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <button>
+                        <img src="https://i.scdn.co/image/ab67616d000011ebe4bf0d3d9e0224a30ca5f665" alt="Cherry Bomb">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album">Cherry Bomb</p>
+                            <p class="artist">Álbum  •  Tyler, the Creator</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <button>
+                        <img src="https://i.scdn.co/image/ab67616d000011ebe4bf0d3d9e0224a30ca5f665" alt="Cherry Bomb">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album">Cherry Bomb</p>
+                            <p class="artist">Álbum  •  Tyler, the Creator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <button>
+                        <img src="https://i.scdn.co/image/ab67616d000011ebe4bf0d3d9e0224a30ca5f665" alt="Cherry Bomb">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album">Cherry Bomb</p>
+                            <p class="artist">Álbum  •  Tyler, the Creator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <button>
+                        <img src="https://i.scdn.co/image/ab67616d000011ebe4bf0d3d9e0224a30ca5f665" alt="Cherry Bomb">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album">Cherry Bomb</p>
+                            <p class="artist">Álbum  •  Tyler, the Creator</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <button>
+                        <img src="https://i.scdn.co/image/ab67616d000011ebe4bf0d3d9e0224a30ca5f665" alt="Cherry Bomb">
+                    </button>
+                    <div class="descriptionContainer">
+                        <div class="description">
+                            <p class="album">Cherry Bomb</p>
+                            <p class="artist">Álbum  •  Tyler, the Creator</p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </aside>
+        
+
+        <main>
+        </main>
+
+
+        <section class="nowplaying"></section>
+
+    </div>
+
+
+    <div class="player">
+        
+    </div>
+</body>
+</html>
